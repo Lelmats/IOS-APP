@@ -16,6 +16,7 @@
 		3D26AE6428C7918700D04E19 /* Proyecto_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26AE6328C7918700D04E19 /* Proyecto_IOSTests.swift */; };
 		3D26AE6F28C7918700D04E19 /* Proyecto_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26AE6E28C7918700D04E19 /* Proyecto_IOSUITests.swift */; };
 		3D26AE7D28C791A700D04E19 /* LittleBoy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D26AE7C28C791A700D04E19 /* LittleBoy.otf */; };
+		3D371CA928CA3C15008A0D22 /* uff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D371CA828CA3C15008A0D22 /* uff.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D26AE6E28C7918700D04E19 /* Proyecto_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proyecto_IOSUITests.swift; sourceTree = "<group>"; };
 		3D26AE7028C7918700D04E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D26AE7C28C791A700D04E19 /* LittleBoy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleBoy.otf; sourceTree = "<group>"; };
+		3D371CA828CA3C15008A0D22 /* uff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = uff.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		3D26AE4B28C7917E00D04E19 /* Proyecto_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D371CA828CA3C15008A0D22 /* uff.mp3 */,
 				3D26AE7C28C791A700D04E19 /* LittleBoy.otf */,
 				3D26AE4C28C7917E00D04E19 /* AppDelegate.swift */,
 				3D26AE4E28C7917E00D04E19 /* SceneDelegate.swift */,
@@ -237,6 +240,7 @@
 			files = (
 				3D26AE7D28C791A700D04E19 /* LittleBoy.otf in Resources */,
 				3D26AE5928C7918600D04E19 /* LaunchScreen.storyboard in Resources */,
+				3D371CA928CA3C15008A0D22 /* uff.mp3 in Resources */,
 				3D26AE5628C7918600D04E19 /* Assets.xcassets in Resources */,
 				3D26AE5428C7917E00D04E19 /* Main.storyboard in Resources */,
 			);

@@ -1,24 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LittleBoy.otf">
+            <string>LittleBoyRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proyecto_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-Wj-1pH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-Um-34F">
+                                <rect key="frame" x="92" y="370" width="230" height="47"/>
+                                <fontDescription key="fontDescription" name="LittleBoyRegular" family="Little Boy" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-uR-wPB">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiba1" translatesAutoresizingMaskIntoConstraints="NO" id="FXp-Tu-hRo">
+                                        <rect key="frame" x="136" y="40" width="142" height="130"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0R5-eG-j6G" appends="YES" id="nNy-3W-alp"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huskyIDLE1" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-uS-QvC">
+                                        <rect key="frame" x="40" y="210" width="130" height="130"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiba6" translatesAutoresizingMaskIntoConstraints="NO" id="Vk3-Ya-WLG">
+                                        <rect key="frame" x="244" y="210" width="130" height="130"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="FXp-Tu-hRo" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="570-Ha-3MT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vk3-Ya-WLG" secondAttribute="trailing" constant="40" id="5JS-iz-DJW"/>
+                                    <constraint firstItem="UXT-uS-QvC" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.31401" id="8Vg-aL-is9"/>
+                                    <constraint firstItem="FXp-Tu-hRo" firstAttribute="top" secondItem="PQ1-uR-wPB" secondAttribute="top" constant="40" id="B8c-qe-Qay">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                    </constraint>
+                                    <constraint firstItem="UXT-uS-QvC" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="E3U-3S-48H"/>
+                                    <constraint firstItem="Vk3-Ya-WLG" firstAttribute="top" secondItem="FXp-Tu-hRo" secondAttribute="bottom" constant="40" id="G3R-Dx-Z43"/>
+                                    <constraint firstItem="FXp-Tu-hRo" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.342995" id="Kh7-Kj-7wy"/>
+                                    <constraint firstItem="Vk3-Ya-WLG" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="kjl-BB-Uh1"/>
+                                    <constraint firstItem="Vk3-Ya-WLG" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.31401" id="lRN-fh-UZK"/>
+                                    <constraint firstItem="FXp-Tu-hRo" firstAttribute="centerX" secondItem="PQ1-uR-wPB" secondAttribute="centerX" id="nC2-8p-tdo"/>
+                                    <constraint firstItem="UXT-uS-QvC" firstAttribute="top" secondItem="FXp-Tu-hRo" secondAttribute="bottom" constant="40" id="r9b-Ah-sk0"/>
+                                    <constraint firstItem="UXT-uS-QvC" firstAttribute="leading" secondItem="PQ1-uR-wPB" secondAttribute="leading" constant="40" id="y64-Sa-DRZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="5C0-IS-ntC"/>
+                            <constraint firstItem="Z6c-Um-34F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Dtu-ER-xUG"/>
+                            <constraint firstAttribute="trailing" secondItem="PQ1-uR-wPB" secondAttribute="trailing" id="G36-gl-Hbn">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KFF-zz-UbK">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kab-aq-ve8">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="MMM-q5-wf1"/>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="top" secondItem="Z6c-Um-34F" secondAttribute="bottom" constant="31" id="O7I-5c-6fZ"/>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VYI-zy-9hy"/>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="XB1-ET-ErE"/>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dcs-Le-hIP">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gbU-RF-A5T"/>
+                            <constraint firstAttribute="bottom" secondItem="PQ1-uR-wPB" secondAttribute="bottom" id="grp-PF-GNq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z6c-Um-34F" secondAttribute="trailing" constant="92" id="kmX-cP-P1J"/>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="leading" secondItem="Z6c-Um-34F" secondAttribute="trailing" constant="60" id="nQ2-6b-iad"/>
+                            <constraint firstItem="Z6c-Um-34F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nRI-Br-nA0">
+                                <variation key="heightClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tCd-jL-hSf"/>
+                            <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="vlY-fP-ieS"/>
+                            <constraint firstItem="Z6c-Um-34F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wyE-QQ-xYi"/>
+                            <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z9o-Xr-VkN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tCd-jL-hSf"/>
+                                <exclude reference="vlY-fP-ieS"/>
+                                <exclude reference="nRI-Br-nA0"/>
+                                <exclude reference="wyE-QQ-xYi"/>
+                                <exclude reference="G36-gl-Hbn"/>
+                                <exclude reference="XB1-ET-ErE"/>
+                                <exclude reference="gbU-RF-A5T"/>
+                                <exclude reference="nQ2-6b-iad"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="5C0-IS-ntC"/>
+                                <exclude reference="VYI-zy-9hy"/>
+                                <include reference="tCd-jL-hSf"/>
+                                <include reference="vlY-fP-ieS"/>
+                                <exclude reference="kmX-cP-P1J"/>
+                                <exclude reference="Dtu-ER-xUG"/>
+                                <include reference="nRI-Br-nA0"/>
+                                <include reference="wyE-QQ-xYi"/>
+                                <include reference="G36-gl-Hbn"/>
+                                <exclude reference="Kab-aq-ve8"/>
+                                <exclude reference="MMM-q5-wf1"/>
+                                <exclude reference="O7I-5c-6fZ"/>
+                                <include reference="XB1-ET-ErE"/>
+                                <include reference="gbU-RF-A5T"/>
+                                <include reference="nQ2-6b-iad"/>
+                                <exclude reference="z9o-Xr-VkN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblLabelDogos" destination="Z6c-Um-34F" id="nHy-Qe-ufu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="0R5-eG-j6G" userLabel="TapDOGO">
+                    <connections>
+                        <action selector="DoTapDOGO:" destination="BYZ-38-t0r" id="sk9-Yh-vqb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="131.25" y="137.68115942028987"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Shiba1" width="106.66666412353516" height="106.66666412353516"/>
+        <image name="Shiba6" width="106.66666412353516" height="106.66666412353516"/>
+        <image name="huskyIDLE1" width="106.66666412353516" height="106.66666412353516"/>
+    </resources>
 </document>
