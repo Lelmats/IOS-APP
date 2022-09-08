@@ -39,8 +39,12 @@
                                             <outletCollection property="gestureRecognizers" destination="0R5-eG-j6G" appends="YES" id="nNy-3W-alp"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huskyIDLE1" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-uS-QvC">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huskyIDLE1" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-uS-QvC">
                                         <rect key="frame" x="40" y="210" width="130" height="130"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="p8X-gP-cKQ" appends="YES" id="m12-Kb-dq9"/>
+                                        </connections>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiba6" translatesAutoresizingMaskIntoConstraints="NO" id="Vk3-Ya-WLG">
                                         <rect key="frame" x="244" y="210" width="130" height="130"/>
@@ -132,6 +136,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="imgHusky" destination="UXT-uS-QvC" id="U0F-ar-Q7N"/>
+                        <outlet property="imgPrincipal" destination="Nsr-Wj-1pH" id="4kM-Wh-iKp"/>
                         <outlet property="imgShiba" destination="FXp-Tu-hRo" id="PJe-Hx-86m"/>
                         <outlet property="lblLabelDogos" destination="Z6c-Um-34F" id="nHy-Qe-ufu"/>
                     </connections>
@@ -140,6 +146,11 @@
                 <tapGestureRecognizer id="0R5-eG-j6G" userLabel="TapDOGO">
                     <connections>
                         <action selector="DoTapDOGO:" destination="BYZ-38-t0r" id="sk9-Yh-vqb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="p8X-gP-cKQ" userLabel="TapHusky">
+                    <connections>
+                        <action selector="DoTapHusky:" destination="BYZ-38-t0r" id="YFH-dk-deA"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
