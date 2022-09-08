@@ -99,6 +99,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-uR-wPB">
                                 <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-4t-M3O">
+                                        <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="448"/>
+                                    </imageView>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shiba1" translatesAutoresizingMaskIntoConstraints="NO" id="FXp-Tu-hRo">
                                         <rect key="frame" x="136" y="40" width="142" height="130"/>
                                         <gestureRecognizers/>
@@ -119,21 +122,45 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="uf3-4t-M3O" firstAttribute="top" secondItem="PQ1-uR-wPB" secondAttribute="top" id="3dP-fF-ePm"/>
+                                    <constraint firstItem="uf3-4t-M3O" firstAttribute="centerX" secondItem="PQ1-uR-wPB" secondAttribute="centerX" id="41c-1Q-hjK"/>
                                     <constraint firstItem="FXp-Tu-hRo" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="570-Ha-3MT"/>
                                     <constraint firstAttribute="trailing" secondItem="Vk3-Ya-WLG" secondAttribute="trailing" constant="40" id="5JS-iz-DJW"/>
                                     <constraint firstItem="UXT-uS-QvC" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.31401" id="8Vg-aL-is9"/>
+                                    <constraint firstAttribute="trailing" secondItem="uf3-4t-M3O" secondAttribute="trailing" id="97V-BG-iiv"/>
                                     <constraint firstItem="FXp-Tu-hRo" firstAttribute="top" secondItem="PQ1-uR-wPB" secondAttribute="top" constant="40" id="B8c-qe-Qay">
                                         <variation key="heightClass=compact" constant="80"/>
                                     </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="uf3-4t-M3O" secondAttribute="bottom" id="Be1-M9-eND"/>
+                                    <constraint firstItem="uf3-4t-M3O" firstAttribute="centerY" secondItem="PQ1-uR-wPB" secondAttribute="centerY" id="DB6-Bv-Cwd"/>
                                     <constraint firstItem="UXT-uS-QvC" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="E3U-3S-48H"/>
                                     <constraint firstItem="Vk3-Ya-WLG" firstAttribute="top" secondItem="FXp-Tu-hRo" secondAttribute="bottom" constant="40" id="G3R-Dx-Z43"/>
+                                    <constraint firstItem="uf3-4t-M3O" firstAttribute="centerX" secondItem="PQ1-uR-wPB" secondAttribute="centerX" id="HLz-l8-boV"/>
                                     <constraint firstItem="FXp-Tu-hRo" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.342995" id="Kh7-Kj-7wy"/>
+                                    <constraint firstItem="uf3-4t-M3O" firstAttribute="centerY" secondItem="PQ1-uR-wPB" secondAttribute="centerY" id="inF-dk-FDH"/>
                                     <constraint firstItem="Vk3-Ya-WLG" firstAttribute="height" secondItem="PQ1-uR-wPB" secondAttribute="height" multiplier="0.290179" id="kjl-BB-Uh1"/>
                                     <constraint firstItem="Vk3-Ya-WLG" firstAttribute="width" secondItem="PQ1-uR-wPB" secondAttribute="width" multiplier="0.31401" id="lRN-fh-UZK"/>
                                     <constraint firstItem="FXp-Tu-hRo" firstAttribute="centerX" secondItem="PQ1-uR-wPB" secondAttribute="centerX" id="nC2-8p-tdo"/>
                                     <constraint firstItem="UXT-uS-QvC" firstAttribute="top" secondItem="FXp-Tu-hRo" secondAttribute="bottom" constant="40" id="r9b-Ah-sk0"/>
                                     <constraint firstItem="UXT-uS-QvC" firstAttribute="leading" secondItem="PQ1-uR-wPB" secondAttribute="leading" constant="40" id="y64-Sa-DRZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uf3-4t-M3O" secondAttribute="trailing" id="zQD-wQ-lxu"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3dP-fF-ePm"/>
+                                        <exclude reference="41c-1Q-hjK"/>
+                                        <exclude reference="97V-BG-iiv"/>
+                                        <exclude reference="inF-dk-FDH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3dP-fF-ePm"/>
+                                        <include reference="41c-1Q-hjK"/>
+                                        <include reference="97V-BG-iiv"/>
+                                        <include reference="inF-dk-FDH"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
