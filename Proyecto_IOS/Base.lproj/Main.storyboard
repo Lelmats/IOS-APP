@@ -26,20 +26,69 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sJB-05-V5C">
                                         <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="448"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-Wj-1pH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-Wj-1pH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414.00000000000011" height="448"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="centerY" secondItem="JuT-jV-epM" secondAttribute="centerY" id="0lL-Rd-25v"/>
+                                    <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerY" secondItem="JuT-jV-epM" secondAttribute="centerY" id="40b-8T-dI3"/>
                                     <constraint firstAttribute="bottom" secondItem="Nsr-Wj-1pH" secondAttribute="bottom" id="6zF-GX-9QC"/>
                                     <constraint firstItem="sJB-05-V5C" firstAttribute="leading" secondItem="JuT-jV-epM" secondAttribute="leading" id="7I5-Rc-2hL"/>
+                                    <constraint firstItem="Nsr-Wj-1pH" firstAttribute="top" secondItem="JuT-jV-epM" secondAttribute="top" id="BzU-c3-6dw"/>
+                                    <constraint firstItem="Nsr-Wj-1pH" firstAttribute="centerX" secondItem="JuT-jV-epM" secondAttribute="centerX" id="D5u-le-I1v"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="centerX" secondItem="JuT-jV-epM" secondAttribute="centerX" id="JWn-jz-Y2Y"/>
                                     <constraint firstItem="Nsr-Wj-1pH" firstAttribute="top" secondItem="JuT-jV-epM" secondAttribute="top" id="KQo-fw-JpH"/>
                                     <constraint firstItem="sJB-05-V5C" firstAttribute="centerY" secondItem="JuT-jV-epM" secondAttribute="centerY" id="L3I-OK-0uR"/>
                                     <constraint firstItem="sJB-05-V5C" firstAttribute="top" secondItem="JuT-jV-epM" secondAttribute="top" id="MJw-bw-qa2"/>
                                     <constraint firstItem="sJB-05-V5C" firstAttribute="centerX" secondItem="JuT-jV-epM" secondAttribute="centerX" id="Qh7-Gb-Mb0"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="leading" secondItem="JuT-jV-epM" secondAttribute="leading" id="XTH-Pm-MUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nsr-Wj-1pH" secondAttribute="trailing" id="a9q-M1-28L"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="leading" secondItem="JuT-jV-epM" secondAttribute="leading" id="cep-g9-QNs"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="centerY" secondItem="JuT-jV-epM" secondAttribute="centerY" id="g7f-cc-cDM"/>
                                     <constraint firstAttribute="trailing" secondItem="Nsr-Wj-1pH" secondAttribute="trailing" id="sOS-2G-MZs"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="top" secondItem="JuT-jV-epM" secondAttribute="top" id="tHd-8S-s9B"/>
+                                    <constraint firstItem="sJB-05-V5C" firstAttribute="centerX" secondItem="JuT-jV-epM" secondAttribute="centerX" id="z6Y-XB-9XO"/>
                                     <constraint firstItem="Nsr-Wj-1pH" firstAttribute="leading" secondItem="JuT-jV-epM" secondAttribute="leading" id="zdf-NG-gmw"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="40b-8T-dI3"/>
+                                        <exclude reference="BzU-c3-6dw"/>
+                                        <exclude reference="D5u-le-I1v"/>
+                                        <exclude reference="a9q-M1-28L"/>
+                                        <exclude reference="0lL-Rd-25v"/>
+                                        <exclude reference="JWn-jz-Y2Y"/>
+                                        <exclude reference="XTH-Pm-MUd"/>
+                                        <exclude reference="cep-g9-QNs"/>
+                                        <exclude reference="g7f-cc-cDM"/>
+                                        <exclude reference="tHd-8S-s9B"/>
+                                        <exclude reference="z6Y-XB-9XO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="40b-8T-dI3"/>
+                                        <exclude reference="6zF-GX-9QC"/>
+                                        <include reference="BzU-c3-6dw"/>
+                                        <include reference="D5u-le-I1v"/>
+                                        <exclude reference="KQo-fw-JpH"/>
+                                        <include reference="a9q-M1-28L"/>
+                                        <exclude reference="sOS-2G-MZs"/>
+                                        <exclude reference="zdf-NG-gmw"/>
+                                        <include reference="0lL-Rd-25v"/>
+                                        <exclude reference="7I5-Rc-2hL"/>
+                                        <exclude reference="JWn-jz-Y2Y"/>
+                                        <exclude reference="L3I-OK-0uR"/>
+                                        <exclude reference="MJw-bw-qa2"/>
+                                        <exclude reference="Qh7-Gb-Mb0"/>
+                                        <include reference="XTH-Pm-MUd"/>
+                                        <exclude reference="cep-g9-QNs"/>
+                                        <exclude reference="g7f-cc-cDM"/>
+                                        <include reference="tHd-8S-s9B"/>
+                                        <include reference="z6Y-XB-9XO"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6c-Um-34F">
                                 <rect key="frame" x="92" y="370" width="230" height="47"/>
@@ -89,7 +138,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="JuT-jV-epM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BpY-XV-Twl"/>
+                            <constraint firstItem="JuT-jV-epM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BpY-XV-Twl">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="Z6c-Um-34F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="Dtu-ER-xUG"/>
                             <constraint firstAttribute="trailing" secondItem="PQ1-uR-wPB" secondAttribute="trailing" id="G36-gl-Hbn">
                                 <variation key="heightClass=compact" constant="0.0"/>
@@ -100,8 +151,11 @@
                             <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="MMM-q5-wf1"/>
                             <constraint firstItem="JuT-jV-epM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nnr-08-djQ"/>
                             <constraint firstItem="PQ1-uR-wPB" firstAttribute="top" secondItem="Z6c-Um-34F" secondAttribute="bottom" constant="31" id="O7I-5c-6fZ"/>
+                            <constraint firstItem="JuT-jV-epM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="TIo-Vr-SMk"/>
                             <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="XB1-ET-ErE"/>
+                            <constraint firstItem="JuT-jV-epM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bmr-cY-JHd"/>
                             <constraint firstItem="JuT-jV-epM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="br8-ac-ofs"/>
+                            <constraint firstItem="JuT-jV-epM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dHb-pU-QfP"/>
                             <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gbU-RF-A5T"/>
                             <constraint firstAttribute="bottom" secondItem="PQ1-uR-wPB" secondAttribute="bottom" id="grp-PF-GNq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z6c-Um-34F" secondAttribute="trailing" constant="92" id="kmX-cP-P1J"/>
@@ -109,6 +163,7 @@
                             <constraint firstItem="Z6c-Um-34F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nRI-Br-nA0">
                                 <variation key="heightClass=compact" constant="-20"/>
                             </constraint>
+                            <constraint firstItem="JuT-jV-epM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tcY-KB-5IV"/>
                             <constraint firstItem="Z6c-Um-34F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wyE-QQ-xYi"/>
                             <constraint firstItem="PQ1-uR-wPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z9o-Xr-VkN"/>
                             <constraint firstItem="JuT-jV-epM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zKP-LN-TDr"/>
@@ -116,6 +171,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="TIo-Vr-SMk"/>
+                                <exclude reference="bmr-cY-JHd"/>
+                                <exclude reference="dHb-pU-QfP"/>
+                                <exclude reference="tcY-KB-5IV"/>
                                 <exclude reference="nRI-Br-nA0"/>
                                 <exclude reference="wyE-QQ-xYi"/>
                                 <exclude reference="G36-gl-Hbn"/>
@@ -126,6 +185,13 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <exclude reference="BpY-XV-Twl"/>
+                                <exclude reference="Nnr-08-djQ"/>
+                                <include reference="TIo-Vr-SMk"/>
+                                <include reference="bmr-cY-JHd"/>
+                                <exclude reference="br8-ac-ofs"/>
+                                <include reference="dHb-pU-QfP"/>
+                                <include reference="tcY-KB-5IV"/>
                                 <exclude reference="kmX-cP-P1J"/>
                                 <exclude reference="Dtu-ER-xUG"/>
                                 <include reference="nRI-Br-nA0"/>
