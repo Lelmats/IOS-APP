@@ -132,6 +132,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="imgShiba" destination="FXp-Tu-hRo" id="PJe-Hx-86m"/>
                         <outlet property="lblLabelDogos" destination="Z6c-Um-34F" id="nHy-Qe-ufu"/>
                     </connections>
                 </viewController>
