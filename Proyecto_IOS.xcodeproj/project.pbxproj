@@ -17,6 +17,10 @@
 		3D26AE6F28C7918700D04E19 /* Proyecto_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26AE6E28C7918700D04E19 /* Proyecto_IOSUITests.swift */; };
 		3D26AE7D28C791A700D04E19 /* LittleBoy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D26AE7C28C791A700D04E19 /* LittleBoy.otf */; };
 		3D371CA928CA3C15008A0D22 /* uff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D371CA828CA3C15008A0D22 /* uff.mp3 */; };
+		3D44179028D0D163004AB035 /* Huskysound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D44178D28D0D162004AB035 /* Huskysound.mp3 */; };
+		3D44179128D0D163004AB035 /* Panecitosound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D44178E28D0D162004AB035 /* Panecitosound.mp3 */; };
+		3D44179228D0D163004AB035 /* Shibasound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D44178F28D0D163004AB035 /* Shibasound.mp3 */; };
+		3D44179428D0D2E9004AB035 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D44179328D0D2E9004AB035 /* BackgroundMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		3D26AE7028C7918700D04E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D26AE7C28C791A700D04E19 /* LittleBoy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LittleBoy.otf; sourceTree = "<group>"; };
 		3D371CA828CA3C15008A0D22 /* uff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = uff.mp3; sourceTree = "<group>"; };
+		3D44178D28D0D162004AB035 /* Huskysound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Huskysound.mp3; sourceTree = "<group>"; };
+		3D44178E28D0D162004AB035 /* Panecitosound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Panecitosound.mp3; sourceTree = "<group>"; };
+		3D44178F28D0D163004AB035 /* Shibasound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Shibasound.mp3; sourceTree = "<group>"; };
+		3D44179328D0D2E9004AB035 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				3D371CA828CA3C15008A0D22 /* uff.mp3 */,
+				3D44179328D0D2E9004AB035 /* BackgroundMusic.mp3 */,
+				3D44178D28D0D162004AB035 /* Huskysound.mp3 */,
+				3D44178E28D0D162004AB035 /* Panecitosound.mp3 */,
+				3D44178F28D0D163004AB035 /* Shibasound.mp3 */,
 				3D26AE7C28C791A700D04E19 /* LittleBoy.otf */,
 				3D26AE4C28C7917E00D04E19 /* AppDelegate.swift */,
 				3D26AE4E28C7917E00D04E19 /* SceneDelegate.swift */,
@@ -238,8 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D44179128D0D163004AB035 /* Panecitosound.mp3 in Resources */,
 				3D26AE7D28C791A700D04E19 /* LittleBoy.otf in Resources */,
+				3D44179028D0D163004AB035 /* Huskysound.mp3 in Resources */,
 				3D26AE5928C7918600D04E19 /* LaunchScreen.storyboard in Resources */,
+				3D44179228D0D163004AB035 /* Shibasound.mp3 in Resources */,
+				3D44179428D0D2E9004AB035 /* BackgroundMusic.mp3 in Resources */,
 				3D371CA928CA3C15008A0D22 /* uff.mp3 in Resources */,
 				3D26AE5628C7918600D04E19 /* Assets.xcassets in Resources */,
 				3D26AE5428C7917E00D04E19 /* Main.storyboard in Resources */,
